@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home Page</title>
+    <link rel="icon" type="icon" href="logo.jpg">
+    <style>
+        .navbar {
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .navbar a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: #fe8dc6;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: rgb(189, 110, 151);
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .link:hover {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var name = prompt('What is your good name?')
+        alert('Welcome ' + name + ', this is our website Bookful welocming you to our onestop bookstore which allows you to get information about various books of diiferent genres.')
+    </script>
+    <center>
+        <table>
+            <tr>
+                <td><img src="logo.jpg" class="logo"></td>
+                <th class="heading">Bookful</th>
+            </tr>
+        </table>
+    </center>
+    <div class="navbar">
+        <a href="#Home">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Genres
+            </button>
+            <div class="dropdown-content">
+                <a href="Sci-Fi.html" class="link">Science Fiction</a>
+                <a href="Autobiography.html" class="link">Autobiography</a>
+                <a href="Comedy.html" class="link">Comedy</a>
+            </div>
+        </div>
+        <a href="Book-Suggestion.html">Book Suggestion</a>
+    </div>
+    <table>
+        <tr>
+            <th class="bsb">Best top-selling Books</th>
+            <th class="bsb">Summary of the Book</th>
+        </tr>
+        <tr>
+            <th class="bsb" class="booktitle">Lord of the rings <img src="LOTR.jpg"></th>
+            <td class="bsb">The Lord of the Rings is a book by John Ronald Reuel Tolkien. It is the saga of a group of
+                sometimes reluctant heroes who set forth to save their world from consummate evil.</td>
+        </tr>
+        <tr>
+            <th class="bsb">Harry Potter and the Soccerer's stone <img src="HP.jpg"></th>
+            <td class="bsb">The Harry Potter and the Soccerer's Stone is a book by Joanne kathleen Rowling. The book is
+                about 11
+                year old Harry Potter, who receives a letter saying that he is invited to attend Hogwarts, school of
+                witchcraft and wizardry. He then learns that a powerful wizard and his minions are after the sorcerer's
+                stone that will make this evil wizard immortal and undefeatable.</td>
+        </tr>
+        <tr>
+            <th class="bsb">Think and Grow Rich <img src="TaGR.jpg"></th>
+            <td class="bsb">Think and Grow Rich by Napoleon Hill examines the psychological power of thought and the
+                brain in the
+                process of furthering your career for both monetary and personal satisfaction. Originally published in
+                1937, this is one of the all-time self-help classics and a must read for investors and entrepreneurial
+                types.
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th class="author" colspan="2">Famous Authors</th>
+        </tr>
+        <tr>
+            <th class="author">William Shakespher <img src="ws.jpg" class="aimg"></th>
+            <td class="author">William Shakespeare was an English playwright, poet and actor. He is widely regarded as
+                the greatest
+                writer in the English language and the world's greatest dramatist. He is often called England's national
+                poet and the "Bard of Avon".</td>
+        </tr>
+        <tr>
+            <th class="author">Charles Dickens <img src="cd.jpg" class="aimg"></th>
+            <td class="author">Charles John Huffam Dickens FRSA was an English writer and social critic. He created some
+                of the world's
+                best-known fictional characters and is regarded by many as the greatest novelist of the Victorian era.
+            </td>
+        </tr>
+        <tr>
+            <th class="author">Stephen King <img src="sk.jpg" class="aimg"></th>
+            <td class="author">Stephen Edwin King is an American author of horror, supernatural fiction, suspense,
+                crime,
+                science-fiction, and fantasy novels.</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th class="movie" colspan="2">Movies based on Books/Novels</th>
+        </tr>
+        <tr>
+            <th class="movie">Jurrasic World <img src="jw.jpg" class="mposter"></th>
+            <td class="movie">Visitors at the Jurassic World theme park run for their lives when the genetically
+                engineered Indominus
+                Rex and other dinosaurs go on a rampage.
+            </td>
+        </tr>
+        <tr>
+            <th class="movie">Spectre <img src="s.jpg" class="mposter"></th>
+            <td class="movie">A cryptic message from the past sends James Bond on a rogue mission to Mexico City and
+                eventually Rome, where he meets Lucia Sciarra, the beautiful and forbidden widow of an infamous
+                criminal. Bond infiltrates a secret meeting and uncovers the existence of the sinister organization
+                known as Spectre. Meanwhile back in London, Max Denbigh, the new head of the Centre for National
+                Security, questions Bond's actions and challenges the relevance of MI6, led by M. Bond covertly enlists
+                Moneypenny and Q to help him seek out Madeleine Swann, the daughter of his old nemesis Mr White, who may
+                hold the clue to untangling the web of Spectre. As Bond ventures towards the heart of Spectre, he learns
+                of a chilling connection between himself and the enemy he seeks.
+            </td>
+        </tr>
+        <tr>
+            <th class="movie">The Jungle Book <img src="tjb.jpeg" class="mposter"></th>
+            <td class="movie">An adventure about Mowgli, a man-cub raised by a family of wolves. But Mowgli finds he is
+                no longer welcome in the jungle when fearsome tiger Shere Khan, who bears the scars of Man, promises to
+                eliminate what he sees as a threat. Urged to abandon the only home he's ever known, Mowgli embarks on a
+                captivating journey of self-discovery, guided by panther-turned-stern mentor Bagheera, and the
+                free-spirited bear Baloo. Along the way, Mowgli encounters jungle creatures who don't exactly have his
+                best interests at heart, including Kaa, a python whose seductive voice and gaze hypnotizes the man-cub,
+                and the smooth-talking King Louie, who tries to coerce Mowgli into giving up the secret to the elusive
+                and deadly red flower: fire.
+            </td>
+        </tr>
+    </table>
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            background: linear-gradient(to right, #fe8dc6, #fed1c7);
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+        }
+
+        .heading {
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+        }
+
+        .bsb {
+            color: darkslateblue;
+        }
+
+        .author {
+            color: darkslateblue;
+        }
+
+        .aimg {
+            height: 150px;
+            width: 150px;
+        }
+
+        .movie {
+            color: darkslateblue;
+        }
+
+        .mposter {
+            height: 400px;
+            width: 250px;
+        }
+    </style>
+</body>
+
+</html>

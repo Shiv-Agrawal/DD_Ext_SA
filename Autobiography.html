@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Autobiography</title>
+    <link rel="icon" type="icon" href="logo.jpg">
+    <style>
+        .navbar {
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .navbar a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: #fe8dc6;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: rgb(189, 110, 151);
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .link:hover {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <table>
+            <tr>
+                <th><img src="logo.jpg" class="logo"></th>
+                <th class="heading">Bookful</th>
+            </tr>
+        </table>
+    </center>
+    <div class="navbar">
+        <a href="Home">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Genres
+            </button>
+            <div class="dropdown-content">
+                <a href="Sci-Fi.html" class="link">Science Fiction</a>
+                <a href="Autobiography.html" class="link">Autobiography</a>
+                <a href="Comedy.html" class="link">Comedy</a>
+            </div>
+        </div>
+        <a href="Book-Suggestion.html">Book Suggestion</a>
+    </div>
+    <marquee>Click on book's cover page to see details about the book</marquee>
+    <center>
+        <table>
+            <tr>
+                <th class="head" colspan="2">Some Books of the genre Autobiography</th>
+            </tr>
+            <tr>
+                <th class="head">Wings of Fire<br><img src="wingsoffire.jpg" class="bookc"
+                        onclick="alert('Book Name: Wings of Fire\nAuthor Name: A.P.J Abdul Kalam\nGenre: Autobiographgy')">
+                </th>
+                <td>Wings of Fire, is the autobiography of the Missile Man of India and former President of India, Dr.
+                    A. P. J. Abdul Kalam. It was written by him and Arun Tiwari.</td>
+            </tr>
+            <tr>
+                <th class="head">Long Walk to Freedom<img src="longwalktofreedom.jpg" class="bookc"
+                        onclick="alert('Book Name: Long Walk to Freedoom\nAuthor Name: Nelson Mandela\nGenre: Autobiographgy')">
+                </th>
+                <td>Long Walk to Freedom is an autobiography credited to South African President Nelson Mandela. It was
+                    ghostwritten by Richard Stengel and first published in 1994 by Little Brown & Co. The book profiles
+                    his early life, coming of age, education and 27 years spent in prison.</td>
+            </tr>
+            <tr>
+                <th class="head">Dreams From My Father<img src="dreamsfrommyfather.jpg" class="bookc"
+                        onclick="alert('Book Name: Dreams From My Father\nAuthor Name: Barack Obama\nGenre: Autobiographgy')">
+                </th>
+                <td>Dreams from My Father: A Story of Race and Inheritance is a memoir by Barack Obama that explores the
+                    events of his early years in Honolulu and Chicago until his entry into Harvard Law School in 1988.
+                    Obama originally published his memoir in 1995, when he was starting his political campaign for the
+                    Illinois Senate.</td>
+            </tr>
+            <tr>
+                <th class="head">The Autobiography of Benjamin Franklin <img
+                        src="theautobiographyofbenjaminfranklin.jpg" class="bookc"
+                        onclick="alert('Book Name: The Autobiographgy of Benjamin Franklin\nAuthor Name: Benjamin Franklin\nGenre: Autobiographgy')">
+                </th>
+                <td>The Autobiography of Benjamin Franklin is the traditional name for the unfinished record of his own
+                    life written by Benjamin Franklin from 1771 to 1790; however, Franklin himself appears to have
+                    called the work his Memoirs.</td>
+            </tr>
+            <tr>
+                <th class="head">The Diary of a Young Girl <img src="thediaryofayounggirl.jpg" class="bookc"
+                        onclick="alert('Book Name: The Diary of a Young Girl\nAuthor Name: Anee Frank\nGenre: Autobiographgy')">
+                </th>
+                <td>The Diary of a Young Girl, also known as The Diary of Anne Frank, is a book of the writings from the
+                    Dutch-language diary kept by Anne Frank while she was in hiding for two years with her family during
+                    the Nazi occupation of the Netherlands.</td>
+            </tr>
+        </table>
+    </center>
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            background: linear-gradient(to right, #fe8dc6, #fed1c7);
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+        }
+
+        .heading {
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+        }
+
+        marquee {
+            color: magenta;
+        }
+
+        td {
+            color: darkslateblue;
+        }
+
+        .head {
+            color: white;
+            font-size: 20px;
+        }
+
+        .bookc {
+            height: 400px;
+            widows: 150px;
+        }
+    </style>
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Science Fiction</title>
+    <link rel="icon" type="icon" href="logo.jpg">
+    <style>
+        .navbar {
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .navbar a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: #fe8dc6;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: rgb(189, 110, 151);
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .link:hover {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <table>
+            <tr>
+                <th><img src="logo.jpg" class="logo"></th>
+                <th class="heading">Bookful</th>
+            </tr>
+        </table>
+    </center>
+    <div class="navbar">
+        <a href="Home">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Genres
+            </button>
+            <div class="dropdown-content">
+                <a href="Sci-Fi.html" class="link">Science Fiction</a>
+                <a href="Autobiography.html" class="link">Autobiography</a>
+                <a href="Comedy.html" class="link">Comedy</a>
+            </div>
+        </div>
+        <a href="Book-Suggestion.html">Book Suggestion</a>
+    </div>
+    <marquee>Click on book's cover page to see details about the book</marquee>
+    <center>
+        <table>
+            <tr>
+                <th class="head" colspan="2">Some Books of the genre Science Fiction</th>
+            </tr>
+            <tr>
+                <th class="head">Dune<br><img src="dune.jpg" class="bookc"
+                        onclick="alert('Book Name: Dune\nAuthor Name: Frank Herbert\nGenre: Science Fiction')"></th>
+                <td>Dune is a 1965 epic science fiction novel by American author Frank Herbert, originally published as
+                    two separate serials in Analog magazine. It tied with Roger Zelazny's This Immortal for the Hugo
+                    Award in 1966 and it won the inaugural Nebula Award for Best Novel. It is the first installment of
+                    the Dune saga.</td>
+            </tr>
+            <tr>
+                <th class="head">Neuromancer<img src="neuromancer.jpg" class="bookc"
+                        onclick="alert('Book Name: Neuromancer\nAuthor Name: William Gibson\nGenre: Science Fiction')">
+                </th>
+                <td>Neuromancer is a 1984 science fiction novel by American-Canadian writer William Gibson. Considered
+                    one of the earliest and best-known works in the cyberpunk genre, it is the only novel to win the
+                    Nebula Award, the Philip K. Dick Award, and the Hugo Award.</td>
+            </tr>
+            <tr>
+                <th class="head">Frankenstein<img src="frankenstein.jpg" class="bookc"
+                        onclick="alert('Book Name: Frankenstein\nAuthor Name: Mary Shelley\nGenre: Science Fiction')">
+                </th>
+                <td>Frankenstein; or, The Modern Prometheus is an 1818 novel written by English author Mary Shelley.
+                    Frankenstein tells the story of Victor Frankenstein, a young scientist who creates a sapient
+                    creature in an unorthodox scientific experiment.</td>
+            </tr>
+            <tr>
+                <th class="head">Nineteen Eighty-Four<img src="nineteen_eight-four.jpg" class="bookc"
+                        onclick="alert('Book Name: Nineteen Eighty-Four\nAuthor Name: George Orwell\nGenre: Science Fiction')">
+                </th>
+                <td>Nineteen Eighty-Four is a dystopian social science fiction novel and cautionary tale written by the
+                    English writer George Orwell. It was published on 8 June 1949 by Secker & Warburg as Orwell's ninth
+                    and final book completed in his lifetime.</td>
+            </tr>
+            <tr>
+                <th class="head">The Martian <img src="martian.jpg" class="bookc"
+                        onclick="alert('Book Name: The Martian\nAuthor Name: Andy Weir\nGenre: Science Fiction')"></th>
+                <td>The Martian is a 2011 science fiction debut novel written by Andy Weir. The book was originally
+                    self-published on Weir's blog, in a serialized format. In 2014, the book was re-released after Crown
+                    Publishing Group purchased the exclusive publishing rights.</td>
+            </tr>
+        </table>
+    </center>
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            background: linear-gradient(to right, #fe8dc6, #fed1c7);
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+        }
+
+        .heading {
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+        }
+
+        marquee {
+            color: magenta;
+        }
+
+        td {
+            color: darkslateblue;
+        }
+
+        .head {
+            color: white;
+            font-size: 20px;
+        }
+
+        .bookc {
+            height: 400px;
+            widows: 150px;
+        }
+    </style>
+</body>
+
+</html>
